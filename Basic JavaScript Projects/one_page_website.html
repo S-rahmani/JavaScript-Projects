@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en" style="background-image: img/back.jpg;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beautiful Cities Around the World</title>
+    <link rel="stylesheet" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-reboot.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/one_page_website.js"></script>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous"> -->
+</head>
+<body>
+<center>
+    <header>
+        <h1>Welcome to Beautiful Cities Around the World</h1>
+        <p>Explore stunning Cities from different countries and experience the tranquility they offer.</p>
+    </header>
+    
+    <section id="pictures">
+      <!-- Images used to open the lightbox -->
+        <div class="row">
+          <div class="column">
+            <img src="img/PIC1.png" onclick="openModal();currentSlide(1)" class="hover-shadow">
+          </div>
+          <div class="column">
+            <img src="img/PIC2.png" onclick="openModal();currentSlide(2)" class="hover-shadow">
+          </div>
+          <div class="column">
+            <img src="img/PIC3.png" onclick="openModal();currentSlide(3)" class="hover-shadow">
+          </div>
+          <div class="column">
+            <img src="img/PIC4.png" onclick="openModal();currentSlide(4)" class="hover-shadow">
+          </div>
+        </div>
+
+        <!-- The Modal/Lightbox -->
+        <div id="myModal" class="modal">
+          <span class="close cursor" onclick="closeModal()">&times;</span>
+          <div class="modal-content">
+
+            <div class="mySlides">
+              <div class="numbertext">1 / 4</div>
+              <img src="img/PIC1-wide.png" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">2 / 4</div>
+              <img src="img/PIC2-wide.png" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">3 / 4</div>
+              <img src="img/PIC3-wide.png" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">4 / 4</div>
+              <img src="img/PIC4-wide.png" style="width:100%">
+            </div>
+            <!-- Next/previous controls -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            <!-- Caption text -->
+            <div class="caption-container">
+              <p id="caption"></p>
+            </div>
+
+            <!-- Thumbnail image controls -->
+            <div class="column">
+              <img class="demo" src="img/PIC1.png" onclick="currentSlide(1)" alt="Nature">
+            </div>
+
+            <div class="column">
+              <img class="demo" src="img/PIC2.png" onclick="currentSlide(2)" alt="Snow">
+            </div>
+
+            <div class="column">
+              <img class="demo" src="img/PIC3.png" onclick="currentSlide(3)" alt="Mountains">
+            </div>
+
+            <div class="column">
+              <img class="demo" src="img/PIC4.png" onclick="currentSlide(4)" alt="Lights">
+            </div>
+          </div>
+        </div>
+<!-- //////////////////////////////////////// -->
+        <h2>Explore Stunning Cities</h2>
+        <!-- <img style=" height: 200px; width: 310px;" src="img/PIC1.png" alt="city 1"> -->
+        <!-- <img style=" height: 200px; width: 310px;" src="img/PIC2.png" alt="city 2"> -->
+        <!-- <img style=" height: 200px; width: 310px;" src="img/PIC3.png" alt="city 1"> -->
+        <div class="card-group row">
+            <!-- <div class="col-md-1"></div> -->
+            <div class="card col-md-4 row-cols-1" style="width: 18rem;">
+              <img class="card-img-top" src="img/PIC3.png" alt="city 1">
+              <div class="card-body">
+                <h5 class="card-title">DUBAI</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+            <!-- <div class="col-md-1"></div> -->
+            <div class="card col-md-4 row-cols-1" style="width: 18rem;">
+              <img class="card-img-top" src="img/PIC4.png" alt="city 1">
+              <div class="card-body">
+                <h5 class="card-title">PARIS</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+            <!-- <div class="col-md-1"></div> -->
+            <div class="card col-md-4 row-cols-1" style="width: 18rem;">
+              <img class="card-img-top" src="img/PIC2.png" alt="city 1">
+              <div class="card-body">
+                <h5 class="card-title">SAINGAPORE</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+            <!-- <div class="col-md-1"></div> -->
+        </div>
+        <!-- <img style=" height: 200px; width: 310px;" src="img/PIC1.png" alt="city 1">
+        <img style=" height: 200px; width: 310px;" src="img/PIC4.png" alt="city 1"> -->
+
+        <!-- Add more images here -->
+    </section>
+
+
+    <section id="videos">
+        <h2>Experience the Tranquility</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/GIqxl_KEPDA" title="10 Most Beautiful Cities in the World" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/RgCENw09Dpk" title="TOP 50 • Most Beautiful CITIES in the World 8K ULTRA HD" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <!-- Add more videos here -->
+    </section>
+    
+    <footer>
+        &copy; 2023 Beautiful Cities Around the World. All rights reserved.
+    </footer>
+</center>
+   <!--  <nav>
+
+        <ul>
+            <li><a href="#pictures">Explore</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#videos">Videos</a></li>
+        </ul>
+    </nav> -->
+
+</body>
+</html>
